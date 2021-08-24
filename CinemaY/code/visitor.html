@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>방명록</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="\source\icon/favicon.ico">
+        <link rel="stylesheet" href="css/visitor_style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body oncontextmenu='return false'>
+        <div class="container">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <div id="circle"></div> </span>
+            <div class="main">
+                <h1 class="title">방명록</h1>
+                <p style="font-size: 12px;" id="text">─────<br><br>Benny and Joon (1993)</p>
+                <p style="font-size: 12px;"id="text">
+                    자유롭게 글을 남겨주세요! <br>
+                    관리자에게 큰 힘이 됩니다 ^_^<br>
+                    추천 영화와 명대사를 남겨주실 경우에는<br>해당되는 카테고리에 이름과 함께 남겨드립니다 ㅇㅅㅇ<br>
+                    평가기간에 수정이 안 되면... 못 함...<br>
+                </p>
+            </div>
+        
+            <fieldset>
+                <legend></legend>
+                <form action="/httprequest/postDataWithFile.php" method="post" enctype="multipart/form-data">
+                    <table class="letter">
+                        <tr>
+                            <td>이름</td>
+                            <td><input type="text" name="name" style="width: 60px;"></td>
+                            <td>사진 첨부</td>
+                            <td><input type="file" name="upload"></td>
+                        </tr>
+                        <tr>
+                            <td  colspan=4>
+                            <textarea placeholder="내용을 입력하세요" name="msg" rows="3px" cols="50%"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2><input type="submit" value="확인"></td>
+                            <td colspan=1><input type="reset" value="cancel"></td>                          </td>
+                        </tr>
+                    </table>
+                </form>
+                <form action="/httprequest/loadDataFromDB.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" value="글 목록 보기">
+                </form>
+            </fieldset>
+        </div>
+        
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="font-size: 25px;">Hello,<br>Stranger</a>
+        <a href="Plan.html">기획서</a>
+        <a href="Film.html">영화 속 한 줄</a>
+        <a href="visitor.html">방명록</a>
+        <a href="About.html">YunYeah</a>
+    </div>
+    </body>
+</html>

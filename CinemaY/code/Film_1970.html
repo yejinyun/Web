@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Cine-Phile</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="\source\icon/favicon.ico">
+        <link rel="stylesheet" href="css/1970_style.css">
+        <script src="script.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+                $('.trigger').on('click', function() {
+                    $('.modal-wrapper').toggleClass('open');
+                    $('.page-wrapper').toggleClass('blur-it');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+
+    <body oncontextmenu='return false'>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div id="circle"></div> </span>
+    <div class="main">
+        <h1 class="title"><a href="Film.html">영화 속 한 줄</a></h1>
+        <p id="text">─────<br><br>Cat on a Hot Tin Roof (1958)
+        <p id="text">마음에 드는 대사를 고르세요</p>
+    </div>
+
+    
+    <button class="btn trigger 1" href="#">Year
+    </button>
+
+    <div class="cardcontainer">
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0034583/">
+            <div class="pic" id="casa">
+                <p class="oneline">
+                    당신의 눈동자에 건배</p></div></a>
+                    <p class="visitor">1942</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0054997/">
+            <div class="pic" id="hustler">
+                <p class="oneline">
+                    The hustler</p></div></a>
+                    <p class="visitor">1961</p>
+        </div>
+        
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <a class="btn-close trigger" href="#">X</a>
+                <h1>년도를 고르세요</h1>
+                <div class="video">
+                   <section class="years">
+                        <br>
+                        <a href="Film_1970.html"><div class="red">~ 1970's</div></a>
+                        <a href="Film_1980.html"><div class="orange">1980's</div></a>
+                        <a href="Film_1990.html"><div class="yellow">1990's</div></a>
+                        <a href="Film_2010.html"><div class="green">2000's ~</div></a>
+                    </section>
+                
+            </div>
+        </div>
+    </div>
+
+    
+        <!--menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" style="font-size: 25px;">Hello,<br>Stranger</a>
+            <a href="Plan.html">기획서</a>
+            <a href="Film.html">영화 속 한 줄</a>
+            <a href="visitor.html">방명록</a>
+            <a href="About.html">YunYeah</a>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

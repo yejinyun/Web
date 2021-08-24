@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Cine-Phile</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="\source\icon/favicon.ico">
+        <link rel="stylesheet" href="css/2010_style.css">
+        <script src="script.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+                $('.trigger').on('click', function() {
+                    $('.modal-wrapper').toggleClass('open');
+                    $('.page-wrapper').toggleClass('blur-it');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+
+    <body oncontextmenu='return false'>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div id="circle"></div> </span>
+    <div class="main">
+        <h1 class="title"><a href="Film.html">영화 속 한 줄</a></h1>
+        <p id="text">─────<br><br>Whiplash (2014)
+        <p id="text">마음에 드는 대사를 고르세요</p>
+    </div>
+    
+    <button class="btn trigger 1" href="#">Year
+    </button>
+
+    <div class="cardcontainer">
+        
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0492835/">
+                <div class="pic" id="king">
+                <p class="oneline">"아래를 보지마"<br> "무서워"<br> "줄 위는 반허공이야.<br> 땅도 아니고 하늘도 아닌 반허공."</p>
+                </div></a>
+                <p class="visitor">으아악<br>2005</p>
+        </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt3521164/">
+                <div class="pic" id="moana">
+                <p class="oneline">당신을 찾으려고 수평선을 넘었어요</p>
+                </div></a>
+                <p class="visitor">따따<br>2016</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt6751668/">
+                <div class="pic" id="para">
+                <p class="oneline">가장 완벽한 계획이 뭔지 알아?
+                    <br>무계획이야. </p>
+                </div></a>
+                <p class="visitor">물결의 감성<br>2019</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1172049/">
+            <div class="pic" id="demolition">
+                <p class="oneline">전 제가 서류 가방을 들고 다니는<br>
+                    사람이 될 줄 몰랐어요.<br>
+                    학교에 도시락 들고 가는 것 같잖아요.</p></div></a>
+                <p class="visitor">2015</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0993846/" target="_blank">
+                <div class="pic" id="wallstreet">
+                <p class="oneline">위험은 우릴 젊게 만든단다.<br>
+                    안 그러니?</p></div></a>
+                <p class="visitor">2013</p>
+        </div>
+        
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt8367814/">
+                <div class="pic" id="gentleman">
+                <p class="oneline">He's name is Fu-huc</p></div></a>
+            <p class="visitor">2019</p>
+        </div>
+    </div>
+ 
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <a class="btn-close trigger" href="#">X</a>
+                <h1>년도를 고르세요</h1>
+                <div class="video">
+                    <section class="years">
+                        <br>
+                        <a href="Film_1970.html"><div class="red">~ 1970's</div></a>
+                        <a href="Film_1980.html"><div class="orange">1980's</div></a>
+                        <a href="Film_1990.html"><div class="yellow">1990's</div></a>
+                        <a href="Film_2010.html"><div class="green">2000's ~</div></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!--menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" style="font-size: 25px;">Hello,<br>Stranger</a>
+            <a href="Plan.html">기획서</a>
+            <a href="Film.html">영화 속 한 줄</a>
+            <a href="visitor.html">방명록</a>
+            <a href="About.html">YunYeah</a>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
